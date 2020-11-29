@@ -8,15 +8,16 @@ class Lexer():
         # Print
         self.lexer.add('PRINT', r'print')
         # Скобки
-        self.lexer.add('OPEN_PAREN', r'\(')
-        self.lexer.add('CLOSE_PAREN', r'\)')
+        self.lexer.add('OPEN_PARENS', r'\(')
+        self.lexer.add('CLOSE_PARENS', r'\)')
         # Точка с запятой
         self.lexer.add('SEMI_COLON', r'\;')
         # Операторы
         self.lexer.add('POW', r'\*\*')
         self.lexer.add('POW', r'\^')
         self.lexer.add('PERCENT', r'\#')
-    # Числа
+        self.lexer.add('MAX', r'\?')
+        # Числа
         self.lexer.add('NUMBER', r'\d+')
         # Игнорируем пробелы
         self.lexer.ignore('\s+')
