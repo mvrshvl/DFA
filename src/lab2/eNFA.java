@@ -100,8 +100,10 @@ public class eNFA {
         String[] tests = {"abaabaaa","aab","aaab","abab",};
 
         for (String test:tests){
+            System.out.println("***************************************");
+            System.out.println("TEST: "+test);
             boolean state = accept(test);
-            System.out.println(state);
+            System.out.println("RESULT: "+state);
         }
     }
 }

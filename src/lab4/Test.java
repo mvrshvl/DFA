@@ -28,7 +28,10 @@ public class Test {
         String []tests = {"","(())","(()","((())()(()))"};
 
         for (String test:tests){
-            System.out.println(pda.doesMatch(test));
+            System.out.println("************************************************************************************");
+            System.out.println("TEST: "+test);
+            boolean result = pda.doesMatch(test);
+            System.out.println("RESULT: "+result);
             System.out.println(PDATree.GetTree(test,'(',')'));
         }
     }

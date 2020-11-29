@@ -1,0 +1,15 @@
+C:\Users\myaki\.jdks\openjdk-15.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.4\lib\idea_rt.jar=51997:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\myaki\IdeaProjects\dfa\out\production\dfa lab1.DFA
+***************************************
+TEST: :)_:(:)
+RESULT: false
+***************************************
+TEST: :)_:(_:)
+RESULT: true
+***************************************
+TEST: )_)_(
+RESULT: false
+***************************************
+TEST: :)_:)_:)
+RESULT: true
+
+Process finished with exit code 0

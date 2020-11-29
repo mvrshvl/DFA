@@ -69,11 +69,13 @@ public class NFA {
     }
 
     public static void main(String[] args) {
-        String[] tests = {"aaaaaaaab","aab","aaab","b",};
+        String[] tests = {"aaaaaaaab","aabaabb","aaab","b",};
 
         for (String test:tests){
+            System.out.println("***************************************");
+            System.out.println("TEST: "+test);
             boolean state = accept(test);
-            System.out.println(state);
+            System.out.println("RESULT: "+state);
         }
     }
 }

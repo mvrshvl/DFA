@@ -64,8 +64,10 @@ public class DFA {
         String[] tests = {":)_:(:)",":)_:(_:)",")_)_(",":)_:)_:)",};
 
         for (String test:tests){
+            System.out.println("***************************************");
+            System.out.println("TEST: "+test);
             boolean state = accept(test);
-            System.out.println(state);
+            System.out.println("RESULT: "+state);
         }
     }
 }
