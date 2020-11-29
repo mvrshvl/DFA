@@ -8,7 +8,7 @@ class Parser():
         self.pg = ParserGenerator(
             # Список всех токенов, принятых парсером.
             ['NUMBER', 'PRINT', 'OPEN_PARENS', 'CLOSE_PARENS',
-             'SEMI_COLON', 'POW', 'PERCENT', 'MAX'],
+             'SEMI_COLON', 'POW', 'PERCENT', 'MAX', 'NEGATIVE'],
             precedence=[
                 ('left', ['POW', 'PERCENT', 'MAX']),
             ]
@@ -38,6 +38,7 @@ class Parser():
             else:
                 return Error()
 
+        @self.pg.production('expression : NEGATIVE')
         @self.pg.production('expression : NUMBER')
         def number(p):
             return Number(p[0].value)

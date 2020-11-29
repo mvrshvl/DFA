@@ -1,0 +1,56 @@
+Testing started at 22:47 ...
+C:\Users\myaki\IdeaProjects\dfa\venv\Scripts\python.exe C:\Users\myaki\AppData\Roaming\JetBrains\IdeaIC2020.2\plugins\python-ce\helpers\pycharm\_jb_unittest_runner.py --path C:/Users/myaki/IdeaProjects/dfa/src/lab6/src/test.py
+Launching unittests with arguments python -m unittest C:/Users/myaki/IdeaProjects/dfa/src/lab6/src/test.py in C:\Users\myaki\IdeaProjects\dfa\src\lab6\src
+
+****************************
+EXPRESSION 4 ** 2 ^ 2
+256
+****************************
+EXPRESSION 4 ** 0
+1
+****************************
+EXPRESSION 0 ** 2
+0
+****************************
+EXPRESSION 0 ** 0
+1
+****************************
+EXPRESSION 5 ** -2
+0.04
+****************************
+EXPRESSION 1 # 3
+33%
+****************************
+EXPRESSION 0 # 2
+0%
+****************************
+EXPRESSION 2 # 0
+0
+****************************
+EXPRESSION 0 # 0
+0
+****************************
+EXPRESSION 2 # -2
+-100%
+****************************
+EXPRESSION 1 ? 3
+3
+****************************
+EXPRESSION 2 ? 0
+2
+****************************
+EXPRESSION 0 ? 0
+0
+****************************
+EXPRESSION -10 ? 5
+5
+****************************
+EXPRESSION -10 ? -20
+-10
+
+
+Ran 15 tests in 0.048s
+
+OK
+
+Process finished with exit code 0

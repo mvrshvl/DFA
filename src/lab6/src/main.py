@@ -1,5 +1,6 @@
 from src.lexer import Lexer
 from src.parser import Parser
+import copy
 
 while (True):
     expr = input("ENTER EXPRESSION - ")
@@ -13,18 +14,13 @@ while (True):
     lexer = Lexer().get_lexer()
     tokens = lexer.lex(text_input)
 
-    error = False
+    tokens_copy = copy.copy(tokens)
 
-    for token in tokens:
-        if token.name == 'ERROR':
-            print("ERROR : INCORRECT EXPRESSION\n")
-            error = True
-            break
-
-    if not error:
+    if not Lexer.Check_tokens(tokens_copy):
         pg = Parser()
         pg.parse()
         parser = pg.get_parser()
         parser.parse(tokens).eval()
 
 print("BYE")
+

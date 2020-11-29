@@ -19,6 +19,7 @@ class Lexer():
         self.lexer.add('MAX', r'\?')
         # Числа
         self.lexer.add('NUMBER', r'\d+')
+        self.lexer.add('NEGATIVE', r'\-\d+')
         self.lexer.add('ERROR', r'\D+')
 
     # Игнорируем пробелы
@@ -27,3 +28,9 @@ class Lexer():
     def get_lexer(self):
         self._add_tokens()
         return self.lexer.build()
+
+    def Check_tokens(tokens):
+        for token in tokens:
+            if token.name == 'ERROR':
+                print("ERROR : INCORRECT EXPRESSION\n")
+                return True
