@@ -19,7 +19,9 @@ class Lexer():
         self.lexer.add('MAX', r'\?')
         # Числа
         self.lexer.add('NUMBER', r'\d+')
-        # Игнорируем пробелы
+        self.lexer.add('ERROR', r'\D+')
+
+    # Игнорируем пробелы
         self.lexer.ignore('\s+')
 
     def get_lexer(self):
